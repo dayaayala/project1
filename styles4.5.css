@@ -1,0 +1,100 @@
+body {
+    background-color: rgb(255, 253, 239); /* ivory */
+}
+@font-face{
+    font-family:"Helvetica";
+    src:
+        local("Helvetica"),
+        url("assets/fonts/HelveticaNeue.ttc");
+}
+
+
+.year{
+    font-family:"Helvetica";
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 30px;
+    text-align: left;
+    margin-left: 35px;
+    background-image: linear-gradient(to right, #FF8200,  #4B4B4B); /* 
+    /* 3. Clip the background to the text area */
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    
+      /* 4. Make the text fill transparent to reveal the background */
+      -webkit-text-fill-color: transparent;
+    
+
+}
+
+.pagefourpointfivetitle{
+    font-family:"Helvetica";
+    font-size: 25px;
+    text-align:left;
+    margin-left: 30px;
+   
+}
+
+.backbutton{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #FF8200; 
+    color: white;
+    border: none;
+    border-radius: 25px; 
+    text-decoration: none; 
+    font-size: 16px;
+    font-family: "Helvetica";
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+  }
+  .backbutton:hover{ 
+      background-color: #ffffff; 
+      transform: translateY(2px); 
+      color: #FF8200;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+.paragraph{
+  
+    font-family:"Helvetica";
+    font-size: 20px;
+    margin-left: -10px;
+    line-height: 1.5em;
+}
+#picturefourpointfive {
+    margin-left: 35px;
+    height: 300px;
+    width: 500px;
+    
+  padding: 20px;        
+  background-color: #ffffff; 
+  display: inline-block; 
+    
+}
+.rotate{
+    transform: rotate(0deg); 
+}
+.rotate:hover{
+    transition: transform 0.5s ease;
+    transform: rotate(5deg); 
+}
+@media all and (max-width:600px){
+    .paragraph{
+        font-size:15px;
+        line-height: 1.5em;
+    }
+    .pagefourpointfivetitle{
+        font-size: 20px;
+
+    }
+    #picturefourpointfive{
+        height:200px;
+        width:400px;
+    }
+    
+}

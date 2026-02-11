@@ -1,0 +1,123 @@
+
+
+.rock-container{
+    
+}
+
+.rock {
+    filter: grayscale(0%);
+}
+
+img {
+    
+   
+}
+
+.rockone{
+    position: absolute;
+    top: 5%;
+    left:-.85%;
+    scale: 100%;
+    z-index: 10;
+    transition: filter 0.45s ease;
+}
+
+.rock:hover {
+    filter: grayscale(100%);
+  }
+
+.rocktwo{
+    position: absolute;
+    top: 14%;
+    left:17.8%;
+    scale: 100%;
+    z-index: 10;
+    transition: filter 0.45s ease;
+}
+
+.rockthree{
+    position: absolute;
+    top: 7.8%;
+    left:26.7%;
+    scale: 98%;
+    z-index: 10;
+    transition: filter 0.45s ease;
+}
+
+.rockfour{
+    position: absolute;
+    top: 11%;
+    left:37.4583%;
+    scale: 98%;
+    z-index: 10;
+    transition: filter 0.45s ease;
+}
+
+.rockfive{
+    position: absolute;
+    top: 16%;
+    left: 49%;
+    scale: 98%;
+    z-index: 10;
+    transition: filter 0.45s ease;
+}
+
+.rocksix{
+    position: absolute;
+    top: 20%;
+    left:55%;
+    scale: 98%;
+    z-index: 10;
+    transition: filter 0.45s ease;
+}
+
+.rockseven{
+    position: absolute;
+    top: 23%;
+    left:61%;
+    scale: 98%;
+    z-index: 10;
+    transition: filter 0.45s ease;
+}
+
+.rockeight{
+    position: absolute;
+    top: 28%;
+    left:66.67%;
+    scale: 98%;
+    z-index: 10;
+    transition: filter 0.45s ease;
+}
+
+.rocknine{
+    position: absolute;
+    top: 48%;
+    left:74.65%;
+    scale: 98%;
+    z-index: 10;
+    transition: filter 0.45s ease;
+}
+.rockten{
+    position: absolute;
+    top: 61%;
+    left:83%;
+    scale: 98%;
+    z-index: 10;
+    transition: filter 0.45s ease;
+}
+
+
+
+#cover {
+    position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: 1;
+}
+
+
+
+

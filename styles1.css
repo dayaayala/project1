@@ -1,0 +1,127 @@
+body {
+    background-color: rgb(255, 253, 239); /* ivory */
+  
+}
+@font-face{
+    font-family:"Helvetica";
+    src:
+        local("Helvetica"),
+        url("assets/fonts/HelveticaNeue.ttc");
+}
+
+.flex-container{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    
+    font-family:"Helvetica";
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 20px;
+    text-align: center;
+    background-image: linear-gradient(to right, #FF8200,  #4B4B4B); 
+    background-size: 400% 100%;
+  
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  
+    
+    -webkit-text-fill-color: transparent;
+    animation: color 10s linear infinite;
+    
+    
+}
+
+@keyframes color{
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.subtitle{
+
+    font-family:"Helvetica";
+    font-size: 20px;
+    text-align:center;
+    
+}
+
+.paragraph{
+    padding: 32px 20%;
+    font-family:"Helvetica";
+    font-size: 20px;
+    line-height: 1.5em;
+
+  
+}
+
+.backbutton{
+  display: inline-flex; 
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #FF8200; 
+  color: white;
+  border: none;
+  border-radius: 25px; 
+  text-decoration: none; 
+  font-size: 16px;
+  font-family: "Helvetica";
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+
+  
+  
+
+}
+.backbutton:hover{ 
+    background-color: #ffffff; 
+    transform: translateY(2px); 
+    color: #FF8200;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+#picture {
+    
+    height: 300px;
+    width: 700px;
+   
+  padding: 20px;        
+  background-color: #ffffff; 
+  
+    
+}
+
+.rotate{
+    transform: rotate(0deg); 
+}
+.rotate:hover{
+    transition: transform 0.5s ease;
+    transform: rotate(5deg); 
+}
+@media all and (max-width:600px){
+    .paragraph{
+        font-size:15px;
+        line-height: 1.5em;
+    }
+    .title{
+        font-size: 20px;
+        letter-spacing: 10px;
+
+    }
+    .subtitle{
+        font-size: 18px;
+    }
+    #picture{
+        height:200px;
+        width:400px;
+    }
+}
+ 
