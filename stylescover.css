@@ -1,7 +1,18 @@
-
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
 
 .rock-container{
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8vw;
+
 }
 
 .rock {
@@ -9,15 +20,17 @@
 }
 
 img {
-    
-   
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .rockone{
-    position: absolute;
-    top: 5%;
-    left:-.85%;
-    scale: 100%;
+    /* position: absolute;
+    top: 22px;
+    left:2vw; */
+    padding-top: 1vw;
+    width: 13vw;
     z-index: 10;
     transition: filter 0.45s ease;
 }
@@ -27,81 +40,92 @@ img {
   }
 
 .rocktwo{
-    position: absolute;
-    top: 14%;
-    left:17.8%;
-    scale: 100%;
+    /* position: absolute;
+    top: 82px;
+    left: 15vw; */
+    padding-top: 5vw;
+    width: 6.3vw;
+
     z-index: 10;
     transition: filter 0.45s ease;
 }
 
 .rockthree{
-    position: absolute;
-    top: 7.8%;
-    left:26.7%;
-    scale: 98%;
+    /* position: absolute;
+    top: 22px;
+    left: 21vw; */
+    padding-top: 1vw;
+    width: 8vw;
     z-index: 10;
     transition: filter 0.45s ease;
 }
 
 .rockfour{
-    position: absolute;
-    top: 11%;
-    left:37.4583%;
-    scale: 98%;
+    /* position: absolute;
+    top: 42px;
+    left: 29vw; */
+    padding-top: 1vw;
+    width: 8.5vw;
     z-index: 10;
     transition: filter 0.45s ease;
 }
 
 .rockfive{
-    position: absolute;
-    top: 16%;
-    left: 49%;
-    scale: 98%;
+    /* position: absolute;
+    top: 77px;
+    left: 37.4vw; */
+    padding-top: 3vw;
+    width: 5.25vw;
     z-index: 10;
     transition: filter 0.45s ease;
 }
 
 .rocksix{
-    position: absolute;
-    top: 20%;
-    left:55%;
-    scale: 98%;
+    /* position: absolute;
+    top: 111px;
+    left: 42.7vw; */
+    padding-top: 4vw;
+    width: 4.55vw;
     z-index: 10;
     transition: filter 0.45s ease;
 }
 
 .rockseven{
-    position: absolute;
+    /* position: absolute;
     top: 23%;
-    left:61%;
-    scale: 98%;
+    left:61%; */
+    padding-top: 6vw;
+    width: 4.5vw;
     z-index: 10;
     transition: filter 0.45s ease;
 }
 
 .rockeight{
-    position: absolute;
+    /* position: absolute;
     top: 28%;
-    left:66.67%;
-    scale: 98%;
+    left:66.67%; */
+    padding-top: 5vw;
+    width: 6vw;
+    /* scale: 98%; */
     z-index: 10;
     transition: filter 0.45s ease;
 }
 
 .rocknine{
-    position: absolute;
+    /* position: absolute;
     top: 48%;
-    left:74.65%;
-    scale: 98%;
+    left:74.65%; */
+    padding-top: 13vw;
+    width: 7.4vw;
     z-index: 10;
     transition: filter 0.45s ease;
 }
 .rockten{
-    position: absolute;
+    /* position: absolute;
     top: 61%;
-    left:83%;
-    scale: 98%;
+    left:83%; */
+    padding-top: 15vw;
+    width: 12.4vw;
     z-index: 10;
     transition: filter 0.45s ease;
 }
@@ -117,6 +141,23 @@ height: 100%;
 object-fit: cover;
 z-index: 1;
 }
+
+/* Mobile: scale the entire container proportionally to maintain layout */
+@media (max-width: 600px) {
+    .rock-container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .rock img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
 
 
 
