@@ -4,6 +4,7 @@ body {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
+    background-color: rgb(255, 253, 239); /* ivory */
 }
 
 .rock-container{
