@@ -60,6 +60,12 @@ body {
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
   
+  #sourceButton {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+  }
+  
 .paragraph{
   
     font-family:"Helvetica";
@@ -78,6 +84,60 @@ body {
   display: inline-block; 
  
     
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.popup-overlay.active {
+    display: flex;
+}
+
+.popup-content {
+    position: relative;
+    background-color: #ffffff;
+    padding: 20px 24px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    width: 320px;
+    font-family: "Helvetica";
+}
+
+.popup-content h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.popup-content a {
+    color: #FF8200;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.popup-content a:hover {
+    text-decoration: underline;
+}
+
+.popup-close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #4B4B4B;
 }
 .rotate{
     transform: rotate(0deg); 

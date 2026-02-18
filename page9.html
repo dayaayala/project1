@@ -7,7 +7,8 @@
     </head>
     <body>
         
-        <a href="index.html" class= "backbutton"> back</a>
+        <a href="index.html" class="backbutton">back</a>
+        <button id="sourceButton" class="backbutton">source</button>
         
        <div class="year">
              <h1> <span style="color:rgb(255, 132, 0);">2019</span>   </h1>
@@ -23,6 +24,42 @@
 
          In October, a livestream from the Rock was launched to provide a view of the changing messages and artwork, while creating community accountability for a space that belongs to everyone.</ul> </p>
        </div>
-     
+      
+       <div id="sourcePopup" class="popup-overlay">
+         <div class="popup-content">
+           <button id="closeSourcePopup" class="popup-close">&times;</button>
+           <h3>Source</h3>
+           <p>
+             <a href="https://therock.utk.edu/history/" target="_blank" rel="noopener noreferrer">
+               https://therock.utk.edu/history/
+             </a>
+           </p>
+         </div>
+       </div>
+ 
+       <script>
+         (function () {
+           var sourceBtn = document.getElementById('sourceButton');
+           var popup = document.getElementById('sourcePopup');
+           var closeBtn = document.getElementById('closeSourcePopup');
+ 
+           if (sourceBtn && popup && closeBtn) {
+             sourceBtn.addEventListener('click', function () {
+               popup.classList.add('active');
+             });
+ 
+             closeBtn.addEventListener('click', function () {
+               popup.classList.remove('active');
+             });
+ 
+             popup.addEventListener('click', function (event) {
+               if (event.target === popup) {
+                 popup.classList.remove('active');
+               }
+             });
+           }
+         })();
+       </script>
+
     </body>
 </html>
