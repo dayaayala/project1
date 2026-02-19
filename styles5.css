@@ -28,11 +28,24 @@ body {
 
 }
 
+.content-row{
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 20px 35px 0 35px;
+}
+
+.media-column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .page5title{
     font-family:"Helvetica";
     font-size: 25px;
     text-align:left;
-    margin-left: 30px;
+    margin-left: 0;
    
 }
 
@@ -64,11 +77,12 @@ body {
   
     font-family:"Helvetica";
     font-size: 20px;
-    margin-left: -10px;
+    margin-left: 0;
     line-height: 1.5em;
+    max-width: 540px;
 }
 #picturefive {
-    margin-left: 35px;
+    margin-left: 0;
     height: 300px;
     width: 500px;
     
@@ -85,9 +99,19 @@ body {
     transform: rotate(5deg); 
 }
 @media all and (max-width:600px){
+    .content-row{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
     .paragraph{
         font-size:15px;
         line-height: 1.5em;
+    }
+    .paragraph ul{
+        padding-left: 0;
+        margin-left: 0;
+        list-style: none;
     }
     .page5title{
         font-size: 20px;
